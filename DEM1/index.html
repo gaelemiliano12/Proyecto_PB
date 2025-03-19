@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEM1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/LOGO.png">
+    <script src="validacion.js"></script>
+    <script>src="api.js"</script>
+</head>
+
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "0534c409-cd9c-4a1a-b01e-761fb28aaa57", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "0e12d6db-f4e6-4656-8703-1fd344ad7c40", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  
+<body>
+    <header>
+        <div class="container">
+            <a href="">
+                <img src="img/LOGO.png" class="logo">
+            </a>
+            <nav>
+                <a href="#inicio">INICIO</a>
+                <a href="#nosotros">NOSOTROS</a>
+                <a href="#servicios">SERVICIOS</a>
+                <a href="#contacto">CONTACTANOS</a>
+ 
+            </nav>
+        </div>
+ 
+
+    </header>
+    <main>
+        <section id="inicio">
+            <img src="img/abono-1694383173.jpg">
+            <div class="bloque-inicio">
+                <h1>DEM 1</h1>
+                <P>LA MEJOR CALIDAD EN LO DEPORTIVO </P>
+                <a href="#nosotros" class="boton boton-inicio">Ver mas</a>
+            </div>
+        </section>
+
+        <section id="nosotros" class="seccion">
+                <div class="container">
+                    <p>Rinde al 100 mirandote bien  </p>
+                </div>
+        </section>
+        
+        <section id="servicios" class="seccion">
+            <div class="container">
+                <div class="row">
+                    <div class="columna columna-33">
+                        <div class="bloque-servicios">
+                            <div class="bloque-img-inicio cuadrado-perfecto">
+                                <img src="img/tools.jpg" class="img">
+                            </div>
+                            <div class="bloque-contenido-servicios">
+                                 <h3 style="color:black"> JERSEYS </h3>
+                                 <p style="color:black">Descripcion del Servicio 1</p>
+                                 <a href="servicios/facturas.php" class="boton boton-blanco">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna columna-33">
+                        <div class="bloque-servicios">
+                            <div class="bloque-img-inicio cuadrado-perfecto">
+                                <img src="img/tools.jpg" class="img">
+                            </div>
+                            <div class="bloque-contenido-servicios">
+                                <h3 style="color:black"> GUANTES </h3>
+                                <p style="color:black">Descripcion del Servicio 2</p>
+                                <a href="servicios/inv.php"class="boton boton-blanco">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna columna-33">
+                        <div class="bloque-servicios">
+                            <div class="bloque-img-inicio cuadrado-perfecto">
+                                <img src="img/tools.jpg" class="img">
+                            </div>
+                            <div class="bloque-contenido-servicios">
+                                <h3 style="color:black"> BOTINES </h3>
+                                <p style="color:black">Descripcion del Servicio 3</p>
+                                <a href="servicios/pedidos.php" class="boton boton-blanco">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>       
+            </div>
+        </section>  
+        <section id="contacto" class="seccion">
+            <iframe src="img/infierno-1695696829.webp" frameborder="0"></iframe>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="columna columna-41 empujar-58">
+                        <form action="procesar_formulario.php" method="post">
+
+                            <div class="form-block">
+                                <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="form-block">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-block">
+                                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu Mensaje aqui"></textarea>
+                            </div> 
+                            <div class="form-block bloque-ultimo">
+                                <input type="submit" class="boton boton-negro" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="columna columna-25">
+                    <p>Secciones</p>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class=" columna columna-25">
+                    <p> Contactanos </p>
+                    <ul>
+                        <li>al222210575@gail.com</a></li>
+                        <li>numero de telefono</li>
+                        <li>Direccion</li>
+                    </ul>
+                </div>
+                <div class="columna columna-25">
+                    <p>Redes Sociales</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/IAFiscalOf">facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer">
+            &copy;Derechos Reservados-2024      Patrosinador oficial GOLDENBOY's Club
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
